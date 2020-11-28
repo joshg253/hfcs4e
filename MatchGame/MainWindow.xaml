@@ -5,8 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MatchGame"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Find all of the matching animals" Height="450" Width="400">
+    <Grid x:Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="?" TextWrapping="NoWrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"/>
+        <TextBlock Grid.Column="1" Text="?" TextWrapping="NoWrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"/>
+        <TextBlock Grid.Column="2" Text="?" TextWrapping="NoWrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"/>
+        <TextBlock Grid.Column="3" Text="?" TextWrapping="NoWrap" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="36" Margin="32,0,0,0"/>
 
+        <TextBlock Grid.Row="1" Text="?" TextWrapping="NoWrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"/>
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="?" TextWrapping="NoWrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"/>
+        <TextBlock Grid.Column="2" Grid.Row="1" Text="?" TextWrapping="NoWrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"/>
+        <TextBlock Grid.Column="3" Grid.Row="1" Text="?" TextWrapping="NoWrap" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="36" Margin="32,0,0,0"/>
+
+        <TextBlock Grid.Row="2" Text="?" TextWrapping="NoWrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"/>
+        <TextBlock Grid.Column="1" Grid.Row="2" Text="?" TextWrapping="NoWrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"/>
+        <TextBlock Grid.Column="2" Grid.Row="2" Text="?" TextWrapping="NoWrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"/>
+        <TextBlock Grid.Column="3" Grid.Row="2" Text="?" TextWrapping="NoWrap" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="36" Margin="32,0,0,0"/>
+
+        <TextBlock Grid.Row="3" Text="?" TextWrapping="NoWrap" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" Margin="0,30,0,0"/>
+        <TextBlock Grid.Column="1" Grid.Row="3" Text="?" TextWrapping="NoWrap" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" Margin="0,30,0,0"/>
+        <TextBlock Grid.Column="2" Grid.Row="3" Text="?" TextWrapping="NoWrap" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" Margin="0,30,0,0"/>
+        <TextBlock Grid.Column="3" Grid.Row="3" Text="?" TextWrapping="NoWrap" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="36" Margin="32,30,0,0"/>
     </Grid>
 </Window>
